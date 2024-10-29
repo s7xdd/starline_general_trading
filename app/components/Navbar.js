@@ -22,12 +22,12 @@ export default function NavbarComponent() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-[50px]" justify="center">
         <NavbarItem isActive>
-          <Link href="/" aria-current="page">
+          <Link href="/" aria-current="page" className="font-bold">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/about">
+          <Link color="foreground" href="/about" className="font-bold">
             About us
           </Link>
         </NavbarItem>
@@ -36,7 +36,7 @@ export default function NavbarComponent() {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent font-bold"
                 endContent={icons.chevron}
                 radius="lg"
                 variant="light"
@@ -71,10 +71,10 @@ export default function NavbarComponent() {
               Procurement Outsourcing
             </DropdownItem>
             <DropdownItem
-              key="stainless_steel_cleaning"
+              key="logistics_shipping"
               startContent={icons.server}
             >
-              Stainless Steel Cleaning
+              Logistics and Shipping
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

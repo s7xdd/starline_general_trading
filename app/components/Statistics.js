@@ -20,7 +20,7 @@ function Statistics() {
     });
 
     return (
-        <div className="bg-black text-white py-16">
+        <div className=" bg-black text-white py-16">
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
                 <div ref={clientRef} className="flex flex-col items-center">
                     <h3 className="text-5xl sm:text-7xl md:text-8xl font-bold">
