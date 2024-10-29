@@ -16,7 +16,7 @@ export default function NavbarComponent() {
         user: <TagUser className="text-danger" fill="currentColor" size={30} />,
       };
   return (
-    <Navbar className="p-3 ">
+    <Navbar className="p-3 bg-white">
       <NavbarBrand>
         <Image src={logo} height={55}/>
       </NavbarBrand>
