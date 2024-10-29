@@ -1,6 +1,5 @@
 import About from "./components/About";
 import Client from "./components/Client";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Quote from "./components/Quote";
 import Services from "./components/Services";
@@ -16,7 +15,7 @@ export default function Home() {
       <Services/>
       <Client/>
       <Quote/>
-      <Footer/>
+  
     </main>
       
   );

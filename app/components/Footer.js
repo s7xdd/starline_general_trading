@@ -2,15 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { MdLocationOn } from "react-icons/md";
 
 function Footer() {
   return (
     <footer className="bg-blue-900 text-white">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-12 px-6">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-6">
         <div className="flex flex-col items-center md:items-start">
           <Image 
             src="/starline-new.png"
-            alt="SIGO Express Logo"
+            alt="Starline Logo"
             width={250}
             height={150}
             className="mb-4"
@@ -35,11 +36,20 @@ function Footer() {
           <ul className="text-gray-400 text-center md:text-left">
             <li className="mb-4 flex items-center justify-center md:justify-start">
             <IoIosMail color='white' size={23} />
-              <a href='mailto:info@bold.com' className="ml-2 text-white hover:text-orange-500">info@bold.com</a>
+              <a href='mailto:starlinegeneraltrading@gmail.com' className="ml-2 text-white hover:text-red-500">starlinegeneraltrading@gmail.com</a>
             </li>
             <li className="flex items-center justify-center md:justify-start ">
               <FaPhoneAlt color='white'/>
-              <a href='tel:12345678' className="ml-2 text-white hover:text-red-500">+971 50 3437726</a>
+              <a href='tel:00971503437726' className="ml-2 text-white hover:text-red-500">+971 50 3437726</a>
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-lg font-semibold mb-4">Locate us</h3>
+          <ul className="text-gray-400 text-center md:text-left">
+            <li className="mb-4 flex items-center justify-center md:justify-start">
+            <MdLocationOn color='white' size={23}/>
+              <a className="ml-2 text-white hover:text-red-500">Starline General Trading LLC, Deira, Dubai, UAE</a>
             </li>
           </ul>
         </div>
