@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.main{
-  background-image: url('../public/image.jpg');
+
+.hero{
+  background-image: url('../public/hero.jpg');
+  background-size: fill;
   background-repeat: no-repeat;
-  background-size: cover;
 }
