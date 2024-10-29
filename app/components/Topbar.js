@@ -9,10 +9,11 @@ function Topbar() {
         <div className="flex items-center gap-2">
           <FaRegClock />
           <span className="container-all">
-            Sat - Thu : 9:00 am - 5:00 pm |{" "}
+            Sat - Thu : 9:00 am - 5:00 pm
           </span>
+          <span className="ml-3">|</span>
         </div>
-        <div className="flex items-center ml-2 gap-2">
+        <div className="flex items-center ml-5 gap-2">
           <IoMailOpen />
           <span>starlinegeneraltrading@gmail.com</span>
         </div>
