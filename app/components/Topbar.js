@@ -5,7 +5,7 @@ import { IoMailOpen } from "react-icons/io5";
 function Topbar() {
   return (
     <div className="bg-blue-800 text-white">
-      <div className=" flex justify-end p-2 mr-6">
+      <div className=" flex justify-center p-2 mr-6">
         <div className="flex items-center gap-2">
           <FaRegClock />
           <span className="container-all">

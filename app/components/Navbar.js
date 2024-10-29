@@ -1,33 +1,85 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+'use client';
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu} from "@nextui-org/react";
 import Image from 'next/image'; 
+import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "../components/Icons.js";
 import logo from '../../public/starline-new.png';
 
 
 export default function NavbarComponent() {
+    const icons = {
+        chevron: <ChevronDown fill="currentColor" size={16} />,
+        scale: <Scale className="text-warning" fill="currentColor" size={30} />,
+        lock: <Lock className="text-success" fill="currentColor" size={30} />,
+        activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
+        flash: <Flash className="text-primary" fill="currentColor" size={30} />,
+        server: <Server className="text-success" fill="currentColor" size={30} />,
+        user: <TagUser className="text-danger" fill="currentColor" size={30} />,
+      };
   return (
-    <div>
-    <Navbar position="static" className="mt-2">
+    <Navbar className="p-3 ">
       <NavbarBrand>
-        <Image src={logo} height={40} alt="logo"/>
+        <Image src={logo} height={55}/>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-9" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-[50px]" justify="center">
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+          <Link href="/" aria-current="page">
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="foreground" href="/about">
+            About us
           </Link>
         </NavbarItem>
+        <Dropdown>
+          <NavbarItem>
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                endContent={icons.chevron}
+                radius="lg"
+                variant="light"
+              >
+                Services
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            aria-label="Services"
+            className="w-[340px]"
+            itemClasses={{
+              base: "gap-4",
+            }}
+          >
+            <DropdownItem
+              key="Import_and_Export"
+              startContent={icons.scale}
+            >
+              Import and Export
+            </DropdownItem>
+            <DropdownItem
+              key="ecommerce"
+              startContent={icons.activity}
+            >
+              Ecommerce Services
+            </DropdownItem>
+            <DropdownItem
+              key="procurement_outsourcing"
+              startContent={icons.flash}
+            >
+              Procurement Outsourcing
+            </DropdownItem>
+            <DropdownItem
+              key="stainless_steel_cleaning"
+              startContent={icons.server}
+            >
+              Stainless Steel Cleaning
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
       </NavbarContent>
-      <NavbarContent justify="end">
+      {/* <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
@@ -36,8 +88,7 @@ export default function NavbarComponent() {
             Sign Up
           </Button>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
     </Navbar>
-    </div>
   );
 }
