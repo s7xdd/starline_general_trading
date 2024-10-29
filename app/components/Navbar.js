@@ -18,7 +18,9 @@ export default function NavbarComponent() {
   return (
     <Navbar className="p-3 bg-white">
       <NavbarBrand>
-        <Image src={logo} height={55}/>
+        <Link href="/">
+          <Image src={logo} height={55}/>
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-[50px]" justify="center">
         <NavbarItem isActive>
@@ -29,6 +31,11 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link color="foreground" href="/about" className="font-bold">
             About us
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/contact" className="font-bold">
+            Contact
           </Link>
         </NavbarItem>
         <Dropdown>
@@ -47,7 +54,7 @@ export default function NavbarComponent() {
           </NavbarItem>
           <DropdownMenu
             aria-label="Services"
-            className="w-[340px]"
+            className="w-[285px]"
             itemClasses={{
               base: "gap-4",
             }}

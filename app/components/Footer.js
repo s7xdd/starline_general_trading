@@ -25,7 +25,7 @@ function Footer() {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="text-gray-200 text-center md:text-left ml-2">
             <li className="mb-2 hover:text-red-500"><a href="/">Home</a></li>
-            <li className="mb-2 hover:text-red-500"><a href="/aboutus">About us</a></li>
+            <li className="mb-2 hover:text-red-500"><a href="/about">About us</a></li>
             <li className="mb-2 hover:text-red-500"><a href="/contact">Contact</a></li>
             <li className="mb-2 hover:text-red-500"><a href="/services">Services</a></li>
           </ul>
@@ -48,7 +48,7 @@ function Footer() {
           <h3 className="text-lg font-semibold mb-4">Locate us</h3>
           <ul className="text-gray-400 text-center md:text-left">
             <li className="mb-4 flex items-center justify-center md:justify-start">
-            <MdLocationOn color='white' size={23}/>
+            <MdLocationOn color='white' size={40}/>
               <a className="ml-2 text-white hover:text-red-500">Starline General Trading LLC, Deira, Dubai, UAE</a>
             </li>
           </ul>

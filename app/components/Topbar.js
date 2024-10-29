@@ -9,7 +9,7 @@ function Topbar() {
         <div className="flex items-center gap-2">
           <FaRegClock />
           <span className="container-all">
-            Sat - Thu : 9:00 am - 5:00 pm
+            Mon - Fri : 9:00 AM - 5:00 PM
           </span>
           <span className="ml-3">|</span>
         </div>
