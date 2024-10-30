@@ -14,31 +14,31 @@ export default function NavbarComponent() {
   const menuItems = [
     {
       item: "Home",
-      href: "/starline_general_trading"
+      href: "/"
     },
     {
       item: "About us",
-      href: "/starline_general_trading/about"
+      href: "/about"
     },
     {
       item: "Contact",
-      href: "/starline_general_trading/contact"
+      href: "/contact"
     },
     {
       item: "Import and Export",
-      href: "/starline_general_trading/services/import-export"
+      href: "/services/import-export"
     },
     {
       item: "Ecommerce",
-      href: "/starline_general_trading/services/ecommerce"
+      href: "/services/ecommerce"
     },
     {
       item: "Procurement Outsourcing",
-      href: "/starline_general_trading/services/procurement"
+      href: "/services/procurement"
     },
     {
       item: "Logistics and Shippinig",
-      href: "/starline_general_trading/services/logistics-shipping"
+      href: "/services/logistics-shipping"
     }
   ];
 
@@ -50,7 +50,7 @@ export default function NavbarComponent() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/starline_general_trading">
+          <Link href="/">
             <img src={'./starline-new.png'} height={300} width={160}/>
           </Link>
         </NavbarBrand>
@@ -58,17 +58,17 @@ export default function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       <NavbarItem isActive>
-            <Link href="/starline_general_trading" aria-current="page" className="font-bold">
+            <Link href="/" aria-current="page" className="font-bold">
               Home
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/starline_general_trading/about" className="font-bold">
+            <Link color="foreground" href="/about" className="font-bold">
               About us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/starline_general_trading/contact" className="font-bold">
+            <Link color="foreground" href="/contact" className="font-bold">
               Contact
             </Link>
           </NavbarItem>
@@ -95,25 +95,25 @@ export default function NavbarComponent() {
               >
               <DropdownItem
                 key="Import_and_Export"
-                href="/starline_general_trading/services/import-export"
+                href="/services/import-export"
                 >
                 Import and Export
               </DropdownItem>
               <DropdownItem
                 key="ecommerce"
-                href="/starline_general_trading/services/ecommerce"
+                href="/services/ecommerce"
                 >
                 Ecommerce Services
               </DropdownItem>
               <DropdownItem
                 key="procurement_outsourcing"
-                href="/starline_general_trading/services/procurement"
+                href="/services/procurement"
                 >
                 Procurement Outsourcing
               </DropdownItem>
               <DropdownItem
                 key="logistics_shipping"
-                href="/starline_general_trading/services/logistics-shipping"
+                href="/services/logistics-shipping"
                 >
                 Logistics and Shipping
               </DropdownItem>
