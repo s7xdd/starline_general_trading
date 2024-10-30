@@ -61,7 +61,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/emdad.png"
+              src="./logos/emdad.png"
               alt="Logo 4"
               width={150}
               height={50}

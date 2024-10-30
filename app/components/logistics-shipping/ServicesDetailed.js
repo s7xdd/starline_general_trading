@@ -17,7 +17,7 @@ function ServicesDetailed() {
       <div className="grid gap-16 items-center">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="/export.jpg"
+            src="./export.jpg"
             alt="Export Services"
             width={600}
             height={400}

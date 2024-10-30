@@ -22,7 +22,7 @@ export default function About() {
         </div>
         <div className="lg:w-1/2 mt-10 lg:mt-0 lg:ml-10">
           <Image
-            src="/about.jpg"
+            src="./about.jpg"
             alt="About Starline"
             width={600}
             height={400}

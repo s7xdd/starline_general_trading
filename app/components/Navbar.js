@@ -14,31 +14,31 @@ export default function NavbarComponent() {
   const menuItems = [
     {
       item: "Home",
-      href: "/"
+      href: "/starline_general_trading"
     },
     {
       item: "About us",
-      href: "/about"
+      href: "/starline_general_trading/about"
     },
     {
       item: "Contact",
-      href: "/contact"
+      href: "/starline_general_trading/contact"
     },
     {
       item: "Import and Export",
-      href: "/services/import-export"
+      href: "/starline_general_trading/services/import-export"
     },
     {
       item: "Ecommerce",
-      href: "/services/ecommerce"
+      href: "/starline_general_trading/services/ecommerce"
     },
     {
       item: "Procurement Outsourcing",
-      href: "/services/procurement"
+      href: "/starline_general_trading/services/procurement"
     },
     {
       item: "Logistics and Shippinig",
-      href: "/services/logistics-shipping"
+      href: "/starline_general_trading/services/logistics-shipping"
     }
   ];
 
@@ -50,7 +50,7 @@ export default function NavbarComponent() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/">
+          <Link href="/starline_general_trading">
             <img src={'./starline-new.png'} height={300} width={160}/>
           </Link>
         </NavbarBrand>
@@ -63,12 +63,12 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/about" className="font-bold">
+            <Link color="foreground" href="/starline_general_trading/about" className="font-bold">
               About us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/contact" className="font-bold">
+            <Link color="foreground" href="/starline_general_trading/contact" className="font-bold">
               Contact
             </Link>
           </NavbarItem>

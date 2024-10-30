@@ -12,7 +12,7 @@ function Footer() {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-6">
         <div className="flex flex-col items-center md:items-start">
           <Image 
-            src="/starline-new.png"
+            src="./starline-new.png"
             alt="Starline Logo"
             width={250}
             height={150}

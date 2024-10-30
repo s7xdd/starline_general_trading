@@ -6,7 +6,7 @@ function About() {
     <section className="flex flex-col mt-10 mb-10 md:flex-row bg-white text-black py-12 px-6 md:px-16">
       <div className="md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
         <Image
-          src="/warehouse.jpg"
+          src="./warehouse.jpg"
           alt="Warehouse"
           width={650}
           height={200}

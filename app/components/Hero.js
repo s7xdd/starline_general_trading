@@ -8,7 +8,7 @@ function Hero() {
     <div className="relative h-[88vh]">
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/hero.jpg"
+          src="./hero.jpg"
           alt="Background Home"
           layout="fill"
           objectFit="cover"
