@@ -43,8 +43,8 @@ function ServicesDetailed() {
             </p>
           </div>
           <Image
-            src="/export.jpg"
-            alt="Export Services"
+            src="/ecommerce.jpg"
+            alt="Ecommerce Services"
             width={600}
             height={400}
             className="rounded-lg shadow-lg"

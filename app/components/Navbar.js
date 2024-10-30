@@ -51,7 +51,7 @@ export default function NavbarComponent() {
         />
         <NavbarBrand>
           <Link href="/">
-            <Image src={'./starline-new.png'} height={300} width={160}/>
+            <img src={'./starline-new.png'} height={300} width={160}/>
           </Link>
         </NavbarBrand>
       </NavbarContent>
