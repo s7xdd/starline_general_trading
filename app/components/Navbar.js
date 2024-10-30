@@ -120,7 +120,7 @@ export default function NavbarComponent() {
             </DropdownMenu>
           </Dropdown>
       </NavbarContent>
-      <NavbarMenu className="bg-white mt-8">
+      <NavbarMenu className="bg-white">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
