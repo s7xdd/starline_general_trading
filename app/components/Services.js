@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { GiCargoShip } from "react-icons/gi";
 
@@ -13,46 +14,54 @@ function Services() {
       </div>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center px-4 sm:px-0">
         <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col items-center">
+          <a href="/services/import-export">
           <Image
             width={70}
             height={100}
             alt='import'
             src="/import.png"
             className='mb-4 rounded-lg'
-          />
+            />
+            </a>
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Import and Export</h3>
           <p className="text-gray-600 text-sm sm:text-base">We receive and process various shipments every month from both local and international market, including LCL, shipments, and full container.</p>
         </div>
         <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col items-center">
-          <Image
-            width={70}
-            height={100}
-            alt='ecommerce'
-            src="/ecommerce.png"
-            className='mb-4'
-          />
+          <a href="/services/ecommerce">
+            <Image
+              width={70}
+              height={100}
+              alt='ecommerce'
+              src="/ecommerce.png"
+              className='mb-4'
+              />
+          </a>
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Ecommerce</h3>
           <p className="text-gray-600 text-sm sm:text-base">We offer comprehensive online solutions. Traderston optimizes product presentation & search, ecommerce consulting. We buy & sell products online at fair prices</p>
         </div>
         <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col items-center">
-          <Image
-            width={70}
-            height={40}
-            alt='ship'
-            src="/procurement.png"
-            className='mb-4'
-          />
+           <a href="/services/procurement">
+            <Image
+              width={70}
+              height={40}
+              alt='ship'
+              src="/procurement.png"
+              className='mb-4'
+              />
+            </a>
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Procurement</h3>
           <p className="text-gray-600 text-sm sm:text-base">We take pride in out distribution network, highly trustworthy in the region. Traderston delivers multiple orders in a day across the UAE and the world.</p>
         </div>
         <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg flex flex-col items-center">
+        <a href="/services/logistics-shipping">
           <Image
             width={70}
             height={40}
             alt='ship'
             src="/shipping.png"
             className='mb-4'
-          />
+            />
+          </a>
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Logistics and Shipping</h3>
           <p className="text-gray-600 text-sm sm:text-base">Starline logistics and shipping services include warehouse management, ship owning, and end to end freight management.</p>
         </div>

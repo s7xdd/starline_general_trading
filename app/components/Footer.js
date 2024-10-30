@@ -27,7 +27,7 @@ function Footer() {
             <li className="mb-2 hover:text-red-500"><a href="/">Home</a></li>
             <li className="mb-2 hover:text-red-500"><a href="/about">About us</a></li>
             <li className="mb-2 hover:text-red-500"><a href="/contact">Contact</a></li>
-            <li className="mb-2 hover:text-red-500"><a href="/services">Services</a></li>
+            <li className="mb-2 hover:text-red-500"><a href="/services/ecommerce">Services</a></li>
           </ul>
         </div>
 

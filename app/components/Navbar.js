@@ -3,17 +3,19 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownIt
 import Image from 'next/image'; 
 import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "../components/Icons.js";
 import logo from '../../public/starline-new.png';
+import { CiGlobe } from "react-icons/ci";
+import { MdComputer } from "react-icons/md";
 
 
 export default function NavbarComponent() {
     const icons = {
         chevron: <ChevronDown fill="currentColor" size={16} />,
-        scale: <Scale className="text-warning" fill="currentColor" size={30} />,
-        lock: <Lock className="text-success" fill="currentColor" size={30} />,
-        activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
-        flash: <Flash className="text-primary" fill="currentColor" size={30} />,
-        server: <Server className="text-success" fill="currentColor" size={30} />,
-        user: <TagUser className="text-danger" fill="currentColor" size={30} />,
+        globe: <CiGlobe className="text-warning" fill="currentColor" size={25} />,
+        ecommerce: <MdComputer className="text-success" fill="currentColor" size={25} />,
+        activity: <Activity className="text-secondary" fill="currentColor" size={25} />,
+        flash: <Flash className="text-primary" fill="currentColor" size={25} />,
+        server: <Server className="text-success" fill="currentColor" size={25} />,
+        user: <TagUser className="text-danger" fill="currentColor" size={25} />,
       };
   return (
     <Navbar className="p-3 bg-white">
@@ -54,32 +56,32 @@ export default function NavbarComponent() {
           </NavbarItem>
           <DropdownMenu
             aria-label="Services"
-            className="w-[285px]"
+            className="w-[200px]"
             itemClasses={{
               base: "gap-4",
             }}
           >
             <DropdownItem
               key="Import_and_Export"
-              startContent={icons.scale}
+              href="/services/import-export"
             >
               Import and Export
             </DropdownItem>
             <DropdownItem
               key="ecommerce"
-              startContent={icons.activity}
+              href="/services/ecommerce"
             >
               Ecommerce Services
             </DropdownItem>
             <DropdownItem
               key="procurement_outsourcing"
-              startContent={icons.flash}
+              href="/services/procurement"
             >
               Procurement Outsourcing
             </DropdownItem>
             <DropdownItem
               key="logistics_shipping"
-              startContent={icons.server}
+              href="/services/logistics-shipping"
             >
               Logistics and Shipping
             </DropdownItem>
