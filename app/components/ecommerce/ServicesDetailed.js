@@ -43,7 +43,7 @@ function ServicesDetailed() {
             </p>
           </div>
           <Image
-            src="./ecommerce.jpg"
+            src="/ecommerce.jpg"
             alt="Ecommerce Services"
             width={600}
             height={400}

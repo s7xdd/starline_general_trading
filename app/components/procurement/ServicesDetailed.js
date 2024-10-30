@@ -42,7 +42,7 @@ function ServicesDetailed() {
             </p>
           </div>
           <Image
-            src="./export.jpg"
+            src="/export.jpg"
             alt="Export Services"
             width={600}
             height={400}

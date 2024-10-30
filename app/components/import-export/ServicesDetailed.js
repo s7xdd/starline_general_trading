@@ -13,7 +13,7 @@ function ServicesDetailed() {
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div>
           <Image
-            src="./import.jpg"
+            src="/import.jpg"
             alt="Import Services"
             width={600}
             height={400}
