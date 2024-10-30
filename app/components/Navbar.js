@@ -58,7 +58,7 @@ export default function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       <NavbarItem isActive>
-            <Link href="/" aria-current="page" className="font-bold">
+            <Link href="/starline_general_trading" aria-current="page" className="font-bold">
               Home
             </Link>
           </NavbarItem>
@@ -95,25 +95,25 @@ export default function NavbarComponent() {
               >
               <DropdownItem
                 key="Import_and_Export"
-                href="/services/import-export"
+                href="/starline_general_trading/services/import-export"
                 >
                 Import and Export
               </DropdownItem>
               <DropdownItem
                 key="ecommerce"
-                href="/services/ecommerce"
+                href="/starline_general_trading/services/ecommerce"
                 >
                 Ecommerce Services
               </DropdownItem>
               <DropdownItem
                 key="procurement_outsourcing"
-                href="/services/procurement"
+                href="/starline_general_trading/services/procurement"
                 >
                 Procurement Outsourcing
               </DropdownItem>
               <DropdownItem
                 key="logistics_shipping"
-                href="/services/logistics-shipping"
+                href="/starline_general_trading/services/logistics-shipping"
                 >
                 Logistics and Shipping
               </DropdownItem>
