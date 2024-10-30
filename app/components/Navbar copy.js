@@ -1,63 +1,47 @@
-"use client";
-import React, { useState } from "react";
-import {Navbar, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-import {ChevronDown} from "../components/Icons.js";
-import Image from "next/image";
+'use client';
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu} from "@nextui-org/react";
+import Image from 'next/image'; 
+import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "../components/Icons.js";
+import logo from '../../public/starline-new.png';
+import { CiGlobe } from "react-icons/ci";
+import { MdComputer } from "react-icons/md";
+
 
 export default function NavbarComponent() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const icons = {
-    chevron: <ChevronDown fill="currentColor" size={16} />,
-  };
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    {
-      item: "Home",
-      href: "/"
-    },
-    {
-      item: "About us",
-      href: "/about"
-    },
-    {
-      item: "Contact",
-      href: "/contact"
-    },
-    {
-      item: "Import and Export",
-      href: "/services/import-export"
-    },
-    {
-      item: "Ecommerce",
-      href: "/services/ecommerce"
-    },
-    {
-      item: "Procurement Outsourcing",
-      href: "/services/procurement"
-    },
-    {
-      item: "Logistics and Shippinig",
-      href: "/services/logistics-shipping"
-    }
+    "Profile",
+    "Dashboard",
+    "Activity",
+    "Analytics",
+    "System",
+    "Deployments",
+    "My Settings",
+    "Team Settings",
+    "Help & Feedback",
+    "Log Out",
   ];
-
+  
+    const icons = {
+        chevron: <ChevronDown fill="currentColor" size={16} />,
+        globe: <CiGlobe className="text-warning" fill="currentColor" size={25} />,
+        ecommerce: <MdComputer className="text-success" fill="currentColor" size={25} />,
+        activity: <Activity className="text-secondary" fill="currentColor" size={25} />,
+        flash: <Flash className="text-primary" fill="currentColor" size={25} />,
+        server: <Server className="text-success" fill="currentColor" size={25} />,
+        user: <TagUser className="text-danger" fill="currentColor" size={25} />,
+      };
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-white">
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
+    <div>
+      <Navbar className="p-3 bg-white">
         <NavbarBrand>
           <Link href="/">
-            <Image src={'./starline-new.png'} height={300} width={160}/>
+            <Image src={logo} height={55}/>
           </Link>
         </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-      <NavbarItem isActive>
+        <NavbarContent className="hidden sm:flex gap-[50px]" justify="center">
+          <NavbarItem isActive>
             <Link href="/" aria-current="page" className="font-bold">
               Home
             </Link>
@@ -119,20 +103,18 @@ export default function NavbarComponent() {
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
-      </NavbarContent>
-      <NavbarMenu className="bg-white mt-8">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full text-black border rounded-lg p-5"
-              href={item.href}
-              size="lg"
-            >
-              {item.item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+        </NavbarContent>
+        {/* <NavbarContent justify="end">
+          <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+          </NavbarItem>
+          <NavbarItem>
+          <Button as={Link} color="primary" href="#" variant="flat">
+          Sign Up
+          </Button>
+          </NavbarItem>
+          </NavbarContent> */}
+      </Navbar>
+    </div>
   );
 }
