@@ -11,7 +11,7 @@ export default function About() {
             About Starline General Trading
           </h2>
           <p className="mt-4 text-gray-600">
-            At Starline General Trading LLC, our mission is to provide top-notch logistics solutions tailored to our clients' unique needs. From transportation and warehousing to inventory management and distribution, we ensure smooth and efficient operations.
+            At Starline General Trading LLC, our mission is to provide top-notch logistics solutions tailored to our clients&apos; unique needs. From transportation and warehousing to inventory management and distribution, we ensure smooth and efficient operations.
           </p>
           <p className="mt-4 text-gray-600">
             With years of experience in the industry, our team is dedicated to offering reliable and innovative services. We pride ourselves on our commitment to excellence and our ability to adapt to the ever-changing logistics landscape.

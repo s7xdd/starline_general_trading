@@ -22,7 +22,7 @@ function Hero() {
                 Starline General Trading LLC
             </h1>
         </div> */}
-        <Image src={logo} height={250} className='mb-8'/>
+        <Image src={logo} height={250} className='mb-8' alt='logo'/>
         <h2 className="text-4xl sm:text-6xl md:text-6xl font-bold mt-0">#GlobalLogistics</h2>
         <p className="mt-5 max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl text-sm sm:text-base text-center">
           We specialize in handling various aspects of logistics, including transportation, warehousing, inventory management, and distribution.

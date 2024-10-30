@@ -34,7 +34,7 @@ function ServicesDetailed() {
           />
           <h3 className="text-2xl font-bold text-gray-800 mt-6">Export Services</h3>
           <p className="mt-4 text-gray-600">
-            Our export services make it easy to send your products to international markets. We handle everything from packaging and documentation to logistics and delivery. With our vast network and expertise, we ensure that your goods reach their destination safely and efficiently. Whether you are exporting to Europe, Asia, or the Americas, we've got you covered.
+            Our export services make it easy to send your products to international markets. We handle everything from packaging and documentation to logistics and delivery. With our vast network and expertise, we ensure that your goods reach their destination safely and efficiently. Whether you are exporting to Europe, Asia, or the Americas, we&apos;ve got you covered.
           </p>
         </div>
       </div>

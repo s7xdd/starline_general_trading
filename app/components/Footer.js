@@ -3,8 +3,10 @@ import Image from 'next/image';
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
+import Link from 'next/link';
 
 function Footer() {
+
   return (
     <footer className="bg-blue-900 text-white">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-6">
@@ -24,10 +26,10 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="text-gray-200 text-center md:text-left ml-2">
-            <li className="mb-2 hover:text-red-500"><a href="/">Home</a></li>
-            <li className="mb-2 hover:text-red-500"><a href="/about">About us</a></li>
-            <li className="mb-2 hover:text-red-500"><a href="/contact">Contact</a></li>
-            <li className="mb-2 hover:text-red-500"><a href="/services/ecommerce">Services</a></li>
+            <li className="mb-2 hover:text-red-500"><Link href="/">Home</Link></li>
+            <li className="mb-2 hover:text-red-500"><Link href="/about">About us</Link></li>
+            <li className="mb-2 hover:text-red-500"><Link href="/contact">Contact</Link></li>
+            <li className="mb-2 hover:text-red-500"><Link href="/services/ecommerce">Services</Link></li>
           </ul>
         </div>
 

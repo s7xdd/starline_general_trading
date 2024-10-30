@@ -3,7 +3,8 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 
 function Quote() {
-    const router = useRouter()
+    const router = useRouter();
+    
   return (
     <div className='py-11 text-center bg-gradient-to-r from-gray-100 to-gray-200'>
   <div className='max-w-screen-md mx-auto'>
@@ -11,7 +12,7 @@ function Quote() {
       Looking for help or any information about our services?
     </h3>
     <p className='mt-3 text-gray-600'>
-      We'll be happy to discuss your needs! Send an email, call, or fill out our Inquiry form.
+      We&apos;ll be happy to discuss your needs! Send an email, call, or fill out our Inquiry form.
     </p>
   </div>
   <div className='flex justify-center mt-5'>

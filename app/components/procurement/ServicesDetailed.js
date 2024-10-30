@@ -29,8 +29,8 @@ function ServicesDetailed() {
               <br />
               With our extensive network and expertise, we ensure that you
               receive the best materials and services at the best prices,
-              delivered on time. Whether you're sourcing locally or
-              internationally, we've got you covered.
+              delivered on time. Whether you&apos;re sourcing locally or
+              internationally, we&apos;ve got you covered.
             </p>
             <p>
               <br />
