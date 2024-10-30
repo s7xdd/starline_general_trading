@@ -19,7 +19,7 @@ function Services() {
             width={70}
             height={100}
             alt='import'
-            src="/import.png"
+            src="./import.png"
             className='mb-4 rounded-lg'
             />
             </a>
@@ -32,7 +32,7 @@ function Services() {
               width={70}
               height={100}
               alt='ecommerce'
-              src="/ecommerce.png"
+              src="./ecommerce.png"
               className='mb-4'
               />
           </a>
@@ -45,7 +45,7 @@ function Services() {
               width={70}
               height={40}
               alt='ship'
-              src="/procurement.png"
+              src="./procurement.png"
               className='mb-4'
               />
             </a>
@@ -58,7 +58,7 @@ function Services() {
             width={70}
             height={40}
             alt='ship'
-            src="/shipping.png"
+            src="./shipping.png"
             className='mb-4'
             />
           </a>

@@ -13,7 +13,7 @@ function Client() {
         <div className="flex flex-wrap justify-center space-x-0 sm:space-x-8 mt-10">
           <div className="flex justify-center items-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/emirates.png"
+              src="./logos/emirates.png"
               alt="Logo 1"
               width={140}
               height={25}
@@ -21,7 +21,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image
-              src="/logos/adipec.png"
+              src="./logos/adipec.png"
               alt="Logo 2"
               width={150}
               height={25}
@@ -29,7 +29,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/damat.png"
+              src="./logos/damat.png"
               alt="Logo 3"
               width={130}
               height={50}
@@ -37,7 +37,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/airproducts.png"
+              src="./logos/airproducts.png"
               alt="Logo 4"
               width={150}
               height={50}
@@ -45,7 +45,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/energy.png"
+              src="./logos/energy.png"
               alt="Logo 4"
               width={150}
               height={50}
@@ -53,7 +53,7 @@ function Client() {
           </div>
           <div className="flex justify-center w-1/2 sm:w-auto mb-4 sm:mb-0">
             <Image 
-              src="/logos/dmg.png"
+              src="./logos/dmg.png"
               alt="Logo 4"
               width={150}
               height={50}
