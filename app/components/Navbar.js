@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import {Navbar, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import {ChevronDown} from "../components/Icons.js";
 import Image from "next/image";
+import { usePathname } from "next/navigation.js";
 
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const currentPath = usePathname();
 
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
@@ -58,17 +60,17 @@ export default function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       <NavbarItem isActive>
-            <Link href="/" aria-current="page" className="font-bold">
+            <Link href="/" aria-current="page" className={`font-bold ${currentPath === '/' ? 'text-blue-700' : 'text-gray-700'}`}>
               Home
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/about" className="font-bold">
+            <Link color="foreground" href="/about" className={`font-bold ${currentPath === '/about' ? 'text-blue-700' : 'text-gray-700'}`}>
               About us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/contact" className="font-bold">
+            <Link color="foreground" href="/contact" className={`font-bold ${currentPath === '/contact' ? 'text-blue-700' : 'text-gray-700'}`}>
               Contact
             </Link>
           </NavbarItem>
@@ -77,7 +79,7 @@ export default function NavbarComponent() {
               <DropdownTrigger>
                 <Button
                   disableRipple
-                  className="p-0 bg-transparent data-[hover=true]:bg-transparent font-bold"
+                  className={`p-0 bg-transparent data-[hover=true]:bg-transparent font-bold ${['/services/ecommerce', '/services/import-export', '/services/procurement', '/services/logistics-shipping'].includes(currentPath) ? 'text-blue-700' : 'text-gray-700'}`}
                   endContent={icons.chevron}
                   radius="lg"
                   variant="light"
