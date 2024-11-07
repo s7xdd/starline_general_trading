@@ -1,22 +1,23 @@
-import About from "./components/About";
-import Client from "./components/Client";
-import Hero from "./components/Hero";
-import Quote from "./components/Quote";
-import Services from "./components/Services";
-import Statistics from "./components/Statistics";
+import React, { lazy, Suspense } from "react";
 
+const About = lazy(() => import("./components/About"));
+const Client = lazy(() => import("./components/Client"));
+const Hero = lazy(() => import("./components/Hero"));
+const Quote = lazy(() => import("./components/Quote"));
+const Services = lazy(() => import("./components/Services"));
+const Statistics = lazy(() => import("./components/Statistics"));
 
 export default function Home() {
-
   return (
     <main>
-      <Hero/>
-      <Statistics/>
-      <About/>
-      <Services/>
-      <Client/>
-      <Quote/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Hero />
+        <Statistics />
+        <About />
+        <Services />
+        <Client />
+        <Quote />
+      </Suspense>
     </main>
-      
   );
 }
