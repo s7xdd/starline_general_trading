@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Statistics from './Statistics';
 import logo from '../../public/starline-new.png';
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -27,9 +28,11 @@ function Hero() {
         <p className="mt-5 max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl text-sm sm:text-base text-center">
           We specialize in handling various aspects of logistics, including transportation, warehousing, inventory management, and distribution.
         </p>
+        <Link href='/contact'>
         <button className="bg-red-500 font-bold text-white px-6 sm:px-8 py-3 sm:py-4 mt-6 rounded-full hover:bg-orange-600 transition duration-300">
           Contact us
         </button>
+        </Link>
       </div>
     </div>
   );
